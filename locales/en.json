@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "features": "Features",
+    "getStarted": "Get started",
+    "apps": "Apps",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "signIn": "Sign in",
+    "startTrial": "Start free trial"
+  },
+  "hero": {
+    "eyebrow": "AI-powered · 3 months free",
+    "h1a": "The expense tracker that",
+    "h1b": "thinks like a CFO",
+    "h1c": ", not a spreadsheet.",
+    "sub": "Skip the signup. Chat our Telegram bot and start logging in seconds — in plain English, any currency, with AI categorisation that learns as you go.",
+    "cta1": "Start 3-month free trial",
+    "cta2": "See how it works",
+    "meta1": "3 months free — no card",
+    "meta2": "Telegram bot from day one",
+    "meta3": "120+ currencies supported"
+  },
+  "stats": {
+    "s1n": "90", "s1l": "Days free — no card",
+    "s2n": "120+", "s2l": "Currencies & live FX",
+    "s3n": "15s", "s3l": "To log an expense via bot",
+    "s4n": "2", "s4l": "Languages — EN & বাংলা"
+  },
+  "features": {
+    "eyebrow": "Why ExpenseFlow",
+    "h2": "Money tools should answer questions, not just collect them.",
+    "lead": "A focused set of features that turn raw transactions into decisions — without the dashboard fatigue.",
+    "items": [
+      { "title": "AI insights, plain-English", "body": "Every month you get a written narrative of where money went, what changed, and what to do next — generated from your real transactions, not templates." },
+      { "title": "Auto-categorise everything", "body": "Type anything — the AI maps it to a canonical category. Edits you make teach it your style. Custom categories supported." },
+      { "title": "Conversational logging with memory", "body": "The bot remembers context mid-conversation. Say \"Coffee, 4.20\" or \"Lunch 850 BDT yesterday\" — amount, currency, merchant, and date are parsed automatically." },
+      { "title": "Multi-currency, two-layer", "body": "Base currency (storage) is independent from display currency. Earn in USD, store in BDT, view in EUR. 120+ live FX rates." },
+      { "title": "Smart confirmation for large amounts", "body": "Transactions ≥50,000 BDT trigger a yes/no confirmation prompt before logging. Prevents accidental entries on big transfers." },
+      { "title": "Natural language date parsing", "body": "\"Last week\", \"this month\", \"last quarter\", \"yesterday\" — all resolve to exact date ranges automatically. No date pickers." },
+      { "title": "Recurring transactions", "body": "Rent, salary, subscriptions auto-logged on schedule. Set up once — the bot handles the rest every billing cycle." },
+      { "title": "Income, investments & transfers", "body": "Track every kind of money movement — expenses, income, transfers, DPS, fixed deposits, and stocks — all in one ledger." },
+      { "title": "Bilingual + themed", "body": "Full English and বাংলা UI. Light / Dark / System theme. PWA offline queue with auto-sync, PDF + Excel exports, 15-day deletion grace period." }
+    ]
+  },
+  "spotlight": {
+    "eyebrow": "AI Summary",
+    "h3": "A finance director in your pocket, writing the monthly report you've been avoiding.",
+    "p": "ExpenseFlow reads your full ledger and writes a short narrative: what changed, what's unusual, and where you can claw back the most without lifestyle pain.",
+    "checks": [
+      "Narrative summary in seconds, on demand",
+      "Highlights anomalies and double-charges automatically",
+      "Suggests realistic budgets based on your last 90 days",
+      "Exports as a clean PDF for accountants or partners"
+    ]
+  },
+  "howSteps": {
+    "eyebrow": "How it works",
+    "h2": "Start on Telegram. See everything on the web.",
+    "steps": [
+      { "title": "Chat the Telegram bot", "body": "Message @ExpenseFlowAI_bot, send /start, and log your first expense in plain English — no signup, no form, no card." },
+      { "title": "AI categorises instantly", "body": "Type \"Coffee 4.20\" or \"Lunch 850 BDT yesterday\" — the AI parses the amount, currency, merchant, and date. You confirm only when it's ambiguous." },
+      { "title": "Open the web dashboard", "body": "Link your Telegram account to get budgets, heatmaps, AI monthly summaries, and multi-currency insights — all synced from your bot conversations." }
+    ]
+  },
+  "useCases": {
+    "eyebrow": "Built for",
+    "h2": "Whoever you are, your money looks different.",
+    "lead": "ExpenseFlow adapts to the way you actually earn, spend, and save — not the way an accounting textbook wishes you did.",
+    "items": [
+      { "icon": "💼", "title": "Freelancers with international clients", "desc": "Bill in USD, pay rent in BDT, save in EUR — without manual math.", "bullets": ["Base + display currency split", "120+ live FX rates", "Tax-season PDF/Excel exports"] },
+      { "icon": "🏠", "title": "Households tracking fixed + variable", "desc": "Salary in, rent and utilities out, groceries in between — automated.", "bullets": ["Recurring transactions for bills", "Soft & hard budget caps", "Daily allowance forecasting"] },
+      { "icon": "📊", "title": "Investors with mixed portfolios", "desc": "DPS, fixed deposits, stocks, and crypto in one place alongside spending.", "bullets": ["Investment + DPS + FD categories", "Portfolio totals & anomaly detection", "15-day deletion grace"] },
+      { "icon": "🌐", "title": "Bilingual users in BD & SA", "desc": "Full English and বাংলা UI, BDT-first, bKash & Nagad-ready.", "bullets": ["English + বাংলা translations", "Light / Dark / System themes", "PWA install, offline queue"] }
+    ]
+  },
+  "getStarted": {
+    "eyebrow": "Get started in 60 seconds",
+    "h2a": "Telegram-first.",
+    "h2b": "3 months free, no card.",
+    "lead": "Skip the signup forms. Chat the bot, log expenses, get daily digests — full access on every surface for 90 days.",
+    "tabTelegram": "Telegram only",
+    "tabTelegramBadge": "No signup",
+    "tabWeb": "Full setup with dashboard",
+    "cta2": "See commands",
+    "cta2Web": "Install on phone",
+    "paths": {
+      "telegram": {
+        "summary": "Skip the website entirely during your trial — just chat the bot.",
+        "summaryBold": "Free for 90 days",
+        "steps": [
+          { "title": "Open Telegram", "body": "On any device — iPhone, Android, web.telegram.org, or desktop. Search @ExpenseFlowAI_bot." },
+          { "title": "Send /start", "body": "The bot replies with a welcome and the commands you can use. If your Telegram ID is on the allowlist, you're in — instantly." },
+          { "title": "Log your first expense", "body": "Type naturally: Coffee, 4.20 · Lunch 850 BDT yesterday · /summary this month. The bot parses amount, category, merchant, and date." },
+          { "title": "Get a daily digest", "body": "Run /schedule_summary at 9am and the bot DMs you a plain-English summary every morning. Stop with /cancel_summary.", "badge": "optional" }
+        ],
+        "cta1": "Open in Telegram",
+        "pills": ["3 months free — no card", "No email or password to set up", "Works on every Telegram client", "Read-only access forever, even after trial"]
+      },
+      "web": {
+        "summary": "Want the charts, budgets, and AI insights?",
+        "summaryBold": "Link a web account.",
+        "steps": [
+          { "title": "Verify on Telegram first", "body": "Open @ExpenseFlowAI_bot, send /start, and the bot replies with your Telegram ID + a 6-digit one-time code." },
+          { "title": "Complete signup on the web", "body": "Paste the code at portal.expenseflowai.com/register. Add your email and base currency. Free trial activates — no card." },
+          { "title": "Confirm your email", "body": "A second 6-digit code arrives via email. Enter it to finish. Your Telegram and web accounts are now linked." },
+          { "title": "Install the PWA", "body": "Add ExpenseFlow to your home screen for a full-screen, offline-capable app." }
+        ],
+        "cta1": "Start 3-month free trial",
+        "pills": ["Real-time sync across all surfaces", "120+ currencies with live FX", "AI monthly summaries", "Budgets, charts, heatmap"]
+      }
+    }
+  },
+  "platforms": {
+    "eyebrow": "Available everywhere",
+    "h2": "One PWA. Installs like a native app on every phone.",
+    "lead": "No App Store fees. No update lag. Offline-ready service worker, push-style alerts, and home-screen icon — on iOS and Android.",
+    "pills": ["No App Store fees", "Install size < 1 MB", "Offline queue + auto-sync", "Updates instantly — no app store review"],
+    "ios": { "name": "iOS — iPhone & iPad", "sub": "Safari · 30 seconds", "foot": "Push alerts via Web Push (iOS 16.4+)", "steps": ["Open portal.expenseflowai.com in Safari (Chrome won't work for install).", "Tap the Share button at the bottom of the screen.", "Scroll and choose Add to Home Screen.", "Tap Add. The icon appears alongside your apps — opens full-screen, no browser bars."] },
+    "android": { "name": "Android — All devices", "sub": "Chrome · One tap install", "foot": "Web Push, badges & share-target", "steps": ["Open portal.expenseflowai.com in Chrome, Edge, or Brave.", "An Install app banner appears automatically. Tap it.", "No banner? Open the ⋮ menu and choose Install app or Add to Home screen.", "Confirm. The app launches with a splash screen and its own task-switcher card."] },
+    "desktop": { "name": "Web & Desktop", "sub": "Any modern browser", "foot": "Works offline · Auto-syncs back online", "footBadge": "Recommended", "steps": ["Sign in at portal.expenseflowai.com on Mac, Windows, Linux, or ChromeOS.", "In Chrome / Edge / Arc, click the install icon in the address bar.", "The dashboard runs in its own window — pin to your dock or taskbar.", "Keyboard shortcuts everywhere — ⌘K to search, N to add expense."] }
+  },
+  "pricing": {
+    "eyebrow": "Simple pricing",
+    "h2": "One product. Three rhythms. Always 3 months free first.",
+    "lead": "Every plan starts with a full 3-month free trial — Telegram bot and web dashboard, no card required.",
+    "trialTitle": "Start with",
+    "trialBold": "3 months free.",
+    "trialSub": "Full access — Telegram bot, web dashboard, AI summaries, everything. Choose a billing rhythm below; you won't be charged until day 90.",
+    "days": "Days free", "card": "Card needed", "features": "Features",
+    "pppNote": "PPP-adjusted pricing for Bangladesh — same full product at a local rate.",
+    "monthly": { "name": "Monthly", "desc": "Maximum flexibility. Cancel any time, no questions asked.", "perks": ["Trying ExpenseFlow before committing", "Variable income or seasonal tracking", "Pause & resume anytime"], "perksLabel": "Best for" },
+    "sixMonth": { "name": "6 Months", "desc": "A semester of clarity at a friendlier per-month rate.", "tag": "Most popular", "perks": ["Everything in Monthly, plus:", "Priority support via Telegram", "Early access to new features"], "perksLabel": "Includes" },
+    "annual": { "name": "Annual", "desc": "Lowest per-month rate. Best for committed users.", "tag": "Best value", "perks": ["Everything in 6 months, plus:", "Lowest per-month price — lock it in", "Priority support & feature requests"], "perksLabel": "Includes" },
+    "sharedTitle": "Every plan includes the full ExpenseFlow product",
+    "sharedSub": "Same features. Different rhythms. No hidden tiers.",
+    "startTrial": "Start 3-month trial",
+    "timelineTitle": "What happens during & after your 3-month free trial",
+    "timelineSub": "We'll remind you well before anything is billed.",
+    "timeline": [
+      { "dot": "0",  "day": "Day 0",    "label": "Pick a cycle & start free. Full access unlocks on Telegram + web instantly." },
+      { "dot": "30", "day": "Month 1",  "label": "First AI monthly summary delivered to Telegram." },
+      { "dot": "75", "day": "Day 75",   "label": "Friendly reminder: 15 days left. Add a card any time." },
+      { "dot": "90", "day": "Day 90",   "label": "First charge on your chosen cycle. Switch cycles any time — we prorate." },
+      { "dot": "👁", "day": "No card?", "label": "Read-only mode — view all your data, charts, and history. Add a card whenever you're ready." }
+    ],
+    "showingUsd": "Showing prices in USD.",
+    "showingBdt": "Showing PPP-adjusted prices in BDT.",
+    "switchTo": "Switch to",
+    "payWith": "Pay with Card · bKash · Nagad"
+  },
+  "trialBanner": {
+    "eyebrow": "Free for 3 months",
+    "h3": "Try the full product. No card. No \"starter\" version.",
+    "p": "The trial unlocks every feature for 90 days. If it doesn't change how you think about money, walk away — no charges, no awkward downgrade dance.",
+    "cta1": "Start 3-month trial",
+    "cta2": "See features"
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "h2": "Sensible answers, none of the legalese.",
+    "items": [
+      { "q": "How does the 3-month free trial work?", "a": "Start by messaging our Telegram bot — no card, no email needed. Send /start and your account is active immediately. Finish linking a web account anytime to unlock the full dashboard. Every feature is unlocked for 90 days. When the trial ends, choose monthly, 6-month, or annual to keep going, or export your data and walk away." },
+      { "q": "Can I use it without creating a web account?", "a": "Yes — the Telegram bot works entirely on its own throughout your trial and subscription. Log expenses, query summaries, set budgets, and schedule daily digests without ever visiting the website. The web dashboard is optional and adds charts, heatmaps, and AI summaries on top." },
+      { "q": "What happens after my 3-month free trial?", "a": "You'll be charged on the cycle you picked at signup — Monthly, 6 months, or Annual. We send Telegram and email reminders 15 days before. If you don't add a card, your account switches to read-only mode. Nothing is ever deleted." },
+      { "q": "How does the Telegram bot know what I mean?", "a": "The bot uses an AI model to parse free-text messages. It extracts the amount, currency, category, merchant, and date — including relative dates like \"yesterday\" or \"last Friday\". For large amounts (≥50,000 BDT) it always asks for confirmation before logging." },
+      { "q": "Why does web signup go through Telegram?", "a": "Telegram acts as your identity anchor. The bot gives you a 6-digit one-time code that you paste on the web signup page — this links your bot conversations to your web account securely without passwords." },
+      { "q": "Is there an iOS or Android app?", "a": "ExpenseFlow is a Progressive Web App (PWA) — install it from Safari on iOS or Chrome on Android. It opens full-screen with its own icon, works offline, and auto-syncs when you reconnect." },
+      { "q": "How does multi-currency work?", "a": "You set a base currency for storage (e.g. BDT) and a separate display currency (e.g. USD). All transactions are stored in your base currency using live FX rates at the time of logging. You can change your display currency freely at any time — your stored data is never altered." },
+      { "q": "Can I switch billing cycles later?", "a": "Yes — switch monthly ↔ 6-month ↔ annual from your account settings at any time. The unused balance is prorated toward the new plan." },
+      { "q": "What does \"AI\" actually do here?", "a": "Three concrete things: (1) parsing your free-text messages into structured transactions, (2) writing your monthly spending summary in plain English, and (3) answering questions like \"how much did I spend on food last week?\" in the chat." },
+      { "q": "Is my data safe?", "a": "All data is transmitted over HTTPS. Your Telegram account is verified via a one-time code — we never see your Telegram credentials. You can permanently delete your account and all associated data at any time, with a 15-day grace period." },
+      { "q": "Which currencies are supported?", "a": "Live FX rates for 120+ currencies. No bank sync is required — you log transactions directly via the bot or the web dashboard. CSV import is available for bulk historical data." }
+    ]
+  },
+  "footer": {
+    "tagline": "The AI expense tracker that turns your transactions into decisions. Built for founders, freelancers, and households who'd rather think than file.",
+    "startFree": "Start free",
+    "product": "Product", "resources": "Resources", "company": "Company",
+    "features": "Features", "howItWorks": "How it works", "pricing": "Pricing", "changelog": "Changelog", "integrations": "Integrations",
+    "helpCenter": "Help center", "blog": "Blog", "guides": "Guides", "apiDocs": "API docs", "status": "Status",
+    "about": "About", "careers": "Careers", "contact": "Contact", "pressKit": "Press kit", "security": "Security",
+    "copyright": "© 2026 ExpenseFlow Labs. All rights reserved.",
+    "support": "Support", "faq": "FAQ",
+    "privacy": "Privacy", "terms": "Terms", "cookies": "Cookies"
+  }
+}

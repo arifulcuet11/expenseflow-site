@@ -1,0 +1,18 @@
+<svg width="980" height="220" viewBox="0 0 980 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">ExpenseFlow AI logo for light backgrounds</title>
+  <desc id="desc">ExpenseFlow AI wordmark with circular flow icon.</desc>
+  <g transform="translate(26 22) scale(.72)">
+    <path d="M55 166A91 91 0 0 1 181 45" stroke="#001633" stroke-width="28" stroke-linecap="round"></path>
+    <path d="M55 166A91 91 0 0 0 209 151" stroke="#FFAB40" stroke-width="28" stroke-linecap="round"></path>
+    <path d="M193 152l19-54 40 42-30-1-18 30-11-17Z" fill="#FFAB40"></path>
+    <path d="M70 146l50-50 34 34 61-65" stroke="#168FFF" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M188 42h28m-28 31 18-19h26m-33 50h33" stroke="#21C6F3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+    <circle cx="228" cy="42" r="13" fill="white" stroke="#21C6F3" stroke-width="8"></circle>
+    <circle cx="244" cy="73" r="13" fill="white" stroke="#85D5E6" stroke-width="8"></circle>
+    <circle cx="244" cy="104" r="13" fill="white" stroke="#21C6F3" stroke-width="8"></circle>
+  </g>
+  <text x="230" y="137" fill="#001633" font-family="Aptos Display, Aptos, Inter, Arial, sans-serif" font-size="86" font-weight="700" letter-spacing="-2">ExpenseFlow</text>
+  <text x="794" y="137" font-family="Aptos Display, Aptos, Inter, Arial, sans-serif" font-size="86" font-weight="700" letter-spacing="-2">
+    <tspan fill="#FFAB40">A</tspan><tspan fill="#03AFFF">I</tspan>
+  </text>
+</svg>
