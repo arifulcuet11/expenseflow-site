@@ -9,15 +9,15 @@ type Currency = 'usd' | 'bdt';
 const PRICES = {
   usd: {
     symbol: '$',
-    monthly:    { per: '9',  billed: '$9 billed monthly · starts after free trial', strike: null,   total: null  },
-    sixMonth:   { per: '7',  billed: '$42 every 6 months', strike: '$54',  total: '$42'  },
-    annual:     { per: '5',  billed: '$60 billed annually', strike: '$108', total: '$60'  },
+    monthly:  { per: '2',    billed: '$2 billed monthly · starts after free trial', strike: null,  total: null  },
+    sixMonth: { per: '1.5',  billed: '$9 every 6 months',   strike: '$12', total: '$9'  },
+    annual:   { per: '1',    billed: '$12 billed annually',  strike: '$24', total: '$12' },
   },
   bdt: {
     symbol: '৳',
-    monthly:    { per: '999',  billed: '৳999 billed monthly · starts after free trial', strike: null,    total: null    },
-    sixMonth:   { per: '749',  billed: '৳4,494 every 6 months', strike: '৳5,994', total: '৳4,494' },
-    annual:     { per: '549',  billed: '৳6,588 billed annually', strike: '৳11,988', total: '৳6,588' },
+    monthly:  { per: '129',  billed: '৳129/mo after discount · regular ৳299', strike: '৳299', total: null   },
+    sixMonth: { per: '99',   billed: '৳594 every 6 months',  strike: '৳774',  total: '৳594' },
+    annual:   { per: '79',   billed: '৳948 billed annually',  strike: '৳1,548', total: '৳948' },
   },
 };
 
@@ -104,7 +104,10 @@ export function Pricing() {
                 <span className="num">{p.monthly.per}</span>
                 <span className="per">/ month</span>
               </div>
-              <div className="cycle-billed">{p.monthly.billed}</div>
+              <div className="cycle-billed">
+                {p.monthly.strike && <><s>{p.monthly.strike}</s>{' '}</>}
+                {p.monthly.billed}
+              </div>
             </div>
             <a className="btn outline cycle-cta" href="#get-started">{pt.startTrial}</a>
             <div className="cycle-divider" />
@@ -129,7 +132,7 @@ export function Pricing() {
                 <span className="per">/ month</span>
               </div>
               <div className="cycle-billed">
-                <s>{p.sixMonth.strike}</s> {p.sixMonth.billed} <span className="save">Save 22%</span>
+                <s>{p.sixMonth.strike}</s> {p.sixMonth.billed} <span className="save">{currency === 'usd' ? 'Save 25%' : 'Save 23%'}</span>
               </div>
             </div>
             <a className="btn primary cycle-cta" href="#get-started">{pt.startTrial}</a>
@@ -155,7 +158,7 @@ export function Pricing() {
                 <span className="per">/ month</span>
               </div>
               <div className="cycle-billed">
-                <s>{p.annual.strike}</s> {p.annual.billed} <span className="save">Save 44%</span>
+                <s>{p.annual.strike}</s> {p.annual.billed} <span className="save">{currency === 'usd' ? 'Save 50%' : 'Save 39%'}</span>
               </div>
             </div>
             <a className="btn outline cycle-cta" href="#get-started">{pt.startTrial}</a>
