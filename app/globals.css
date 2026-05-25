@@ -512,6 +512,8 @@ section { position: relative; }
   .usecase-grid { grid-template-columns: repeat(2, 1fr); }
   .foot-grid { grid-template-columns: 1fr 1fr; }
   .trial-banner { grid-template-columns: 1fr; }
+  .trial-banner .actions { flex-direction: column; width: 100%; }
+  .trial-banner .actions a { width: 100%; justify-content: center; }
   .pricing-2col, .cycle-grid { grid-template-columns: 1fr; }
   .cycle-card.popular { transform: none; }
   .shared-features { grid-template-columns: 1fr; }
