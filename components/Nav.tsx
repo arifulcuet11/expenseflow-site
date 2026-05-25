@@ -1,5 +1,7 @@
 'use client';
 
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { BrandMark } from './BrandMark';
@@ -25,17 +27,49 @@ function MoonIcon() {
   );
 }
 
+function HamburgerIcon({ open }: { open: boolean }) {
+  return (
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+      {open ? (
+        <>
+          <line x1="4" y1="4" x2="16" y2="16" />
+          <line x1="16" y1="4" x2="4" y2="16" />
+        </>
+      ) : (
+        <>
+          <line x1="3" y1="6" x2="17" y2="6" />
+          <line x1="3" y1="10" x2="17" y2="10" />
+          <line x1="3" y1="14" x2="17" y2="14" />
+        </>
+      )}
+    </svg>
+  );
+}
+
 export function Nav() {
   const { t, lang, setLang } = useLanguage();
   const { theme, setTheme } = useTheme();
   const pathname = usePathname();
   const home = pathname === '/';
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
 
-  // On homepage use bare anchors so browser scrolls smoothly without a reload.
-  // On any other page prefix with / so Next.js navigates home then scrolls.
   const href = (anchor: string) => home ? anchor : `/${anchor}`;
 
+  // Close menu on route change
+  useEffect(() => { setMenuOpen(false); }, [pathname]);
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [menuOpen]);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
+    <>
     <header className="nav">
       <div className="container nav-inner">
         <Link href="/"><BrandMark /></Link>
@@ -64,10 +98,39 @@ export function Nav() {
           >
             {lang === 'en' ? 'বাংলা' : 'EN'}
           </button>
-          <a className="btn ghost" href="https://portal.expenseflowai.com" target="_blank" rel="noopener noreferrer">{t.nav.signIn}</a>
-          <a className="btn primary" href={href('#pricing')}>{t.nav.startTrial}</a>
+          <a className="btn ghost nav-signin" href="https://portal.expenseflowai.com" target="_blank" rel="noopener noreferrer">{t.nav.signIn}</a>
+          <a className="btn primary nav-trial" href={href('#pricing')}>{t.nav.startTrial}</a>
         </div>
+        <button
+          className="nav-hamburger"
+          onClick={() => setMenuOpen(o => !o)}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+        >
+          <HamburgerIcon open={menuOpen} />
+        </button>
       </div>
+
     </header>
+    {mounted && createPortal(
+      <>
+        {menuOpen && <div className="nav-mobile-overlay" onClick={closeMenu} />}
+        <div className={`nav-mobile-drawer${menuOpen ? ' open' : ''}`}>
+          <nav className="nav-mobile-links">
+            <a className="nav-mobile-link" href={href('#features')} onClick={closeMenu}>{t.nav.features}</a>
+            <a className="nav-mobile-link" href={href('#get-started')} onClick={closeMenu}>{t.nav.getStarted}</a>
+            <a className="nav-mobile-link" href={href('#platforms')} onClick={closeMenu}>{t.nav.apps}</a>
+            <a className="nav-mobile-link" href={href('#pricing')} onClick={closeMenu}>{t.nav.pricing}</a>
+            <a className="nav-mobile-link" href={href('#faq')} onClick={closeMenu}>{t.nav.faq}</a>
+          </nav>
+          <div className="nav-mobile-actions">
+            <a className="btn ghost" style={{ width: '100%', justifyContent: 'center' }} href="https://portal.expenseflowai.com" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>{t.nav.signIn}</a>
+            <a className="btn primary" style={{ width: '100%', justifyContent: 'center' }} href={href('#pricing')} onClick={closeMenu}>{t.nav.startTrial}</a>
+          </div>
+        </div>
+      </>,
+      document.body
+    )}
+    </>
   );
 }

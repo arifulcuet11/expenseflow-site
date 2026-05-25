@@ -57,7 +57,7 @@ export default function ContactPage() {
     e.preventDefault();
     setStatus('sending');
     try {
-      const res = await fetch('/api/v1/contact', {
+      const res = await fetch('https://api.expenseflowai.com/api/v1/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, subject, message, website: '' }),

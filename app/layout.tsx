@@ -8,8 +8,9 @@ export const metadata: Metadata = {
   description: 'AI-powered expense tracker with auto-categorisation, plain-English monthly summaries, multi-currency support, and calendar heatmaps. Start with 3 months free.',
   icons: {
     icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icon.png', sizes: '192x192', type: 'image/png' },
       { url: '/favicon.ico', sizes: 'any' },
-      { url: '/brand/expenseflow-icon.svg', type: 'image/svg+xml' },
     ],
     apple: '/brand/icon-192.png',
   },
