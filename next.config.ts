@@ -6,8 +6,8 @@ const isGithubPages = process.env.GITHUB_PAGES === "true";
 
 const nextConfig: NextConfig = {
   output: "export",
-  // GitHub Pages serves from /expenseflow-site/ unless a custom domain is set.
-  basePath: isGithubPages ? "/expenseflow-site" : "",
+  // Custom domain — no basePath needed
+  basePath: "",
   images: { unoptimized: true },
   // Rewrites are not supported with static export — contact form POSTs directly to the backend.
   ...(isGithubPages
