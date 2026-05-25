@@ -9,9 +9,9 @@ type Currency = 'usd' | 'bdt';
 const PRICES = {
   usd: {
     symbol: '$',
-    monthly:  { per: '2',    billed: '$2 billed monthly · starts after free trial', strike: null,  total: null  },
-    sixMonth: { per: '1.5',  billed: '$9 every 6 months',   strike: '$12', total: '$9'  },
-    annual:   { per: '1',    billed: '$12 billed annually',  strike: '$24', total: '$12' },
+    monthly:  { per: '3',    billed: '$3 billed monthly · starts after free trial', strike: null,  total: null  },
+    sixMonth: { per: '2',    billed: '$12 every 6 months',  strike: '$18', total: '$12' },
+    annual:   { per: '1.5',  billed: '$18 billed annually', strike: '$36', total: '$18' },
   },
   bdt: {
     symbol: '৳',
