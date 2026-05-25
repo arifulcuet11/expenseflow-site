@@ -529,7 +529,9 @@ section { position: relative; }
 }
 @media (max-width: 640px) {
   .container { padding: 0 20px; }
-  .feat-grid, .steps, .stat-strip, .usecase-grid { grid-template-columns: 1fr; }
+  .feat-grid, .steps, .usecase-grid { grid-template-columns: 1fr; }
+  .stat-strip { grid-template-columns: repeat(2, 1fr); gap: 24px 16px; }
+  .stat .lbl { font-size: 10px; letter-spacing: .08em; }
   .foot-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
   .foot-brand { grid-column: 1 / -1; }
   .foot-bottom { flex-direction: column; align-items: flex-start; gap: 16px; }
