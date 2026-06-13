@@ -1,0 +1,7 @@
+# Target modern browsers only — eliminates legacy JS polyfills (saves ~14KB)
+# Covers >95% of global users as of 2025
+last 2 Chrome versions
+last 2 Firefox versions
+last 2 Safari versions
+last 2 Edge versions
+not dead
