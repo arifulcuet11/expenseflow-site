@@ -21,7 +21,7 @@ export function MockDashboard() {
     <div className="mock-frame">
       <div className="orb orb-1">
         <div className="orb-icon">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4">
             <path d="M9 11l3 3L22 4" /><path d="M21 12a9 9 0 1 1-6.219-8.56" />
           </svg>
         </div>
@@ -79,7 +79,7 @@ export function MockDashboard() {
             <div className="ttl">Daily breakdown</div>
             <div className="leg"><span className="sw" /> Spending</div>
           </div>
-          <svg viewBox="0 0 280 100" width="100%" height="100" preserveAspectRatio="none">
+          <svg role="img" aria-label="Daily spending sparkline chart showing an upward trend over 12 data points" viewBox="0 0 280 100" width="100%" height="100" preserveAspectRatio="none">
             <defs>
               <linearGradient id="mockFill" x1="0" x2="0" y1="0" y2="1">
                 <stop offset="0%" stopColor="#FFAB40" stopOpacity=".4" />
@@ -99,7 +99,7 @@ export function MockDashboard() {
 
         <div className="mock-ai">
           <div className="mock-ai-icon">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/>
               <circle cx="12" cy="12" r="3.5" />
             </svg>

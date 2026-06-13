@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(js|json|md|config\\)$|nextconfig\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" -X POST https://api.expenseflowai.com/api/v1/contact -H \"Content-Type: application/json\" -d '{\"name\":\"test\",\"email\":\"test@test.com\",\"subject\":\"test\",\"message\":\"test\",\"website\":\"\"}')",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://api.expenseflowai.com/api/v1/contact)",
+      "Bash(curl -s -I https://api.expenseflowai.com/)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001)",
+      "Bash(npx --yes playwright screenshot --browser chromium --viewport-size \"390,844\" \"http://localhost:3001\" /tmp/nav-mobile.png)",
+      "Bash(npx playwright *)",
+      "Read(//tmp/**)",
+      "Read(//private/tmp/**)",
+      "Bash(node -e ' *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
+    ]
+  }
+}

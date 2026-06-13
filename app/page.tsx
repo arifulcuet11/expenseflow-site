@@ -11,10 +11,12 @@ import { Pricing } from '@/components/Pricing';
 import { TrialBanner } from '@/components/TrialBanner';
 import { FAQ } from '@/components/FAQ';
 import { Footer } from '@/components/Footer';
+import { JsonLd } from '@/components/JsonLd';
 
 export default function Home() {
   return (
     <>
+      <JsonLd />
       <div className="atmos" />
       <div className="grid-noise" />
       <div className="wrap">

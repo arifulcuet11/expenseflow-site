@@ -6,6 +6,9 @@
 @font-face { font-family: 'Aptos Display'; font-weight: 700; src: url('/fonts/Aptos-Display-Bold.ttf') format('truetype'); font-display: swap; }
 @font-face { font-family: 'Aptos Mono'; font-weight: 400; src: url('/fonts/Aptos-Mono.ttf') format('truetype'); font-display: swap; }
 
+/* ── Accessibility ──────────────────────── */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
 /* ── Tokens ─────────────────────────────── */
 :root {
   /* Brand palette — never change */
