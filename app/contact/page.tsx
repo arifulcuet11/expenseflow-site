@@ -73,7 +73,7 @@ export default function ContactPage() {
   return (
     <>
       <Nav />
-      <div className="legal-page">
+      <main className="legal-page">
         <div className="container">
           <div className="legal-body">
             <div className="legal-maxw">
@@ -177,7 +177,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </>
   );

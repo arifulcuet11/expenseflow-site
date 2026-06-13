@@ -174,7 +174,7 @@ export function Pricing() {
 
         <div className="cycle-shared">
           <div className="cycle-shared-head">
-            <h4>{pt.sharedTitle}</h4>
+            <h3>{pt.sharedTitle}</h3>
             <span className="lbl">{pt.sharedSub}</span>
           </div>
           <ul className="shared-features">
@@ -189,7 +189,7 @@ export function Pricing() {
 
         <div className="trial-flow">
           <div className="trial-flow-head">
-            <h4>{pt.timelineTitle}</h4>
+            <h3>{pt.timelineTitle}</h3>
             <span className="sub">{pt.timelineSub}</span>
           </div>
           <div className="timeline">

@@ -22,7 +22,7 @@ export function HowSteps() {
               <div key={i} className="step">
                 <div className="step-icon"><Ic /></div>
                 <div className="step-num">{String(i + 1).padStart(2, '0')}</div>
-                <h4>{s.title}</h4>
+                <h3>{s.title}</h3>
                 <p>{s.body}</p>
               </div>
             );

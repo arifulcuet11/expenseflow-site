@@ -48,10 +48,10 @@ export function GetStarted() {
 
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <div className="path-tabs" role="tablist">
-            <button className={path === 'telegram' ? 'active' : ''} onClick={() => setPath('telegram')}>
+            <button role="tab" aria-selected={path === 'telegram'} className={path === 'telegram' ? 'active' : ''} onClick={() => setPath('telegram')}>
               {gs.tabTelegram} <span className="badge-tiny">{gs.tabTelegramBadge}</span>
             </button>
-            <button className={path === 'web' ? 'active' : ''} onClick={() => setPath('web')}>
+            <button role="tab" aria-selected={path === 'web'} className={path === 'web' ? 'active' : ''} onClick={() => setPath('web')}>
               {gs.tabWeb}
             </button>
           </div>
@@ -76,12 +76,12 @@ export function GetStarted() {
                 <div className="start-step" key={i}>
                   <div className={`num ${STEP_TONES[i]}`}>{i + 1}</div>
                   <div>
-                    <h4>
+                    <h3>
                       {s.title}
                       {'badge' in s && s.badge && (
                         <span className="platform-pill" style={{ marginLeft: 8 }}>{s.badge}</span>
                       )}
-                    </h4>
+                    </h3>
                     <StepBody text={s.body} />
                   </div>
                 </div>

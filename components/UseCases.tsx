@@ -19,7 +19,7 @@ export function UseCases() {
           {t.useCases.items.map((u, i) => (
             <div key={i} className={`usecase ${TONES[i]}`}>
               <div className="usecase-icon">{u.icon}</div>
-              <h4>{u.title}</h4>
+              <h3>{u.title}</h3>
               <p>{u.desc}</p>
               <ul>
                 {u.bullets.map((b, j) => <li key={j}>{b}</li>)}

@@ -69,7 +69,7 @@ export default function AboutPage() {
   return (
     <>
       <Nav />
-      <div className="legal-page">
+      <main className="legal-page">
         <div className="container">
           <div className="legal-body">
             <div className="legal-maxw" style={{ maxWidth: 760 }}>
@@ -134,7 +134,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </>
   );

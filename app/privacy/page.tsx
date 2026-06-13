@@ -11,11 +11,11 @@ export default function PrivacyPage() {
   return (
     <>
       <Nav />
-      <div className="legal-page">
+      <main className="legal-page">
         <div className="container">
           {lang === 'bn' ? <PrivacyBN /> : <PrivacyEN />}
         </div>
-      </div>
+      </main>
       <Footer />
     </>
   );
